@@ -67,6 +67,7 @@ class AuthorizationTest extends TestCase
                 'title' => 'Hacked Title by User B',
                 'description' => 'This is a hacked description that should not be saved',
                 'priority' => 'high',
+                'status' => 'open',
             ]);
 
         $response->assertStatus(403);
